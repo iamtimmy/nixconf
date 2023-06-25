@@ -48,5 +48,21 @@
           }
         ];
       };
+
+      nixosConfigurations.laptop = nixosSystem {
+        inherit system;
+        modules = [
+          settings
+          ./laptop/configuration.nix
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.admin = {
+              imports = [ ./laptop/home.nix ];
+            };
+          };
+        ];
+      };
+
     };
 }
