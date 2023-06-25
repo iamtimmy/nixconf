@@ -1,0 +1,16 @@
+theme = "gruvbox_dark_hard"
+#theme = "onedark"
+#theme = "fleet_dark"
+#theme = "jellybeans"
+
+[editor]
+line-number = "relative"
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false

@@ -1,5 +1,8 @@
 { pkgs, ... }:
 
+let
+  dotfiles = import ../dotfiles/default.nix;
+in
 {
   home.username = "admin";
   home.homeDirectory = "/home/admin";
@@ -31,7 +34,7 @@
     pavucontrol
   ];
 
-  home.file = {
+  home.file = dotfiles // {
   };
 
   home.sessionVariables = {

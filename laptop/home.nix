@@ -1,5 +1,8 @@
 { pkgs, ... }:
 
+let
+  dotfiles = import ../dotfiles/default.nix;
+in
 {
   home.username = "admin";
   home.homeDirectory = "/home/admin";
@@ -25,7 +28,7 @@
     helvum
   ];
 
-  home.file = {
+  home.file = dotfiles // {
   };
 
   home.sessionVariables = {
@@ -33,7 +36,4 @@
     BROWSER = "firefox";
     TERMINAL = "alacritty";
   };
-
-  #wayland.windowManager.hyperland.enable = true;
-  #wayland.windowManager.hyperland.nvidiaPatches = true;
 }
