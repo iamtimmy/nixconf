@@ -15,6 +15,7 @@
     
     wget 
     git
+    gh
     neofetch
 
     firefox
