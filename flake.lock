@@ -6,18 +6,15 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "ny": "ny",
-        "sf-arabic": "sf-arabic",
-        "sf-compact": "sf-compact",
         "sf-mono": "sf-mono",
         "sf-pro": "sf-pro"
       },
       "locked": {
-        "lastModified": 1686329218,
-        "narHash": "sha256-SB/cCm8sIPTwNj0nyQjQAZ677Tt3r0ulYYr+RRgLVc8=",
+        "lastModified": 1687716210,
+        "narHash": "sha256-1QI1s12HJRGcPKnsRTbO/FQK2dX4sjfiAwQqE3yb1oM=",
         "owner": "paranormal775566",
         "repo": "apple-fonts.nix",
-        "rev": "3cd92151287bdebc5b435a2400f15b838062a3a5",
+        "rev": "65534deb4960ce742d5593f764fa127bc7720e35",
         "type": "github"
       },
       "original": {
@@ -31,16 +28,17 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1685518550,
-        "narHash": "sha256-o2d0KcvaXzTrPRIo0kOLV0/QXHhDQ5DTi+OxcjO8xqY=",
+        "lastModified": 1687171271,
+        "narHash": "sha256-BJlq+ozK2B1sJDQXS3tzJM5a+oVZmi1q0FlBK/Xqv7M=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "a1720a10a6cfe8234c0e93907ffe81be440f4cef",
+        "rev": "abfb11bd1aec8ced1c9bb9adfe68018230f4fb3c",
         "type": "github"
       },
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "rev": "abfb11bd1aec8ced1c9bb9adfe68018230f4fb3c",
         "type": "github"
       }
     },
@@ -101,48 +99,12 @@
         "type": "github"
       }
     },
-    "ny": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-tfiDSsgH2s11Vvm5qL+tYztErMqJ2RKCPbtLapiUyto=",
-        "type": "file",
-        "url": "https://devimages-cdn.apple.com/design/resources/download/NY.dmg"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://devimages-cdn.apple.com/design/resources/download/NY.dmg"
-      }
-    },
     "root": {
       "inputs": {
         "apple-fonts-packages": "apple-fonts-packages",
         "haumea": "haumea",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
-      }
-    },
-    "sf-arabic": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-98jYwFjrLkrDsjgAVoac26XRrNzgseil18p0WkNJs+M=",
-        "type": "file",
-        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Arabic.dmg"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Arabic.dmg"
-      }
-    },
-    "sf-compact": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-GvlicKoMR1kDq6AhTQ7OcnjuP6Ms/5qoGbQ/Y5kJ/zc=",
-        "type": "file",
-        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg"
       }
     },
     "sf-mono": {

@@ -32,6 +32,9 @@ in
     helvum
     qjackctl
     pavucontrol
+
+    reaper
+    zrythm
   ];
 
   home.file = dotfiles // {

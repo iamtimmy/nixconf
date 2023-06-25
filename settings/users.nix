@@ -5,6 +5,12 @@
 
   users.admin = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ 
+      "networkmanager"
+      "wheel"
+      "libvirtd"
+      "rtprio"
+      "memlock"
+    ];
   };
 }
