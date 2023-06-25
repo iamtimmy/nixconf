@@ -11,6 +11,7 @@ in
   systemPackages = with pkgs; [
     foot
     alacritty
+    kitty
 
     zsh
     bash
