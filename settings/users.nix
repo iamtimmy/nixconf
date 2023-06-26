@@ -8,9 +8,9 @@
     extraGroups = [ 
       "networkmanager"
       "wheel"
+      "audio"
+      "realtime"
       "libvirtd"
-      "rtprio"
-      "memlock"
     ];
   };
 }

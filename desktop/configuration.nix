@@ -8,13 +8,16 @@
       ./gnome.nix
     ];
 
-  boot.kernelParams = [ "amd_pstate=active" ];
+  # boot.kernelParams = [ "amd_pstate=active" ];
   powerManagement.cpuFreqGovernor = "performance";
   hardware.cpu.amd.updateMicrocode = true;
 
   # boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
-  boot.kernelModules = [ "winesync" ];
+  # boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
+
+  boot.kernelPackages = pkgs.linuxPackages-rt_latest;
+
+  boot.kernelModules = [ "snd-seq" "snd-rawmidi" ]; # "winesync"
   boot.blacklistedKernelModules = [ "amdgpu" "snd_hda_intel" ];
 
   boot.loader.systemd-boot.enable = true;
@@ -50,6 +53,13 @@
     jack.enable = true;
     wireplumber.enable = true;
   };
+
+  security.pam.loginLimits = [
+    { domain = "@audio"; item = "memlock"; type = "-"; value = "unlimited"; }
+    { domain = "@audio"; item = "rtprio"; type = "-"; value = "99"; }
+    { domain = "@audio"; item = "nofile"; type = "soft"; value = "99999"; }
+    { domain = "@audio"; item = "nofile"; type = "hard"; value = "99999"; }
+  ];
 
   hardware.pulseaudio.enable = false;
 

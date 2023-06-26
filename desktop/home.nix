@@ -31,10 +31,16 @@ in
 
     helvum
     qjackctl
+    qpwgraph
     pavucontrol
 
     reaper
     zrythm
+    lmms
+    ardour
+    bitwig-studio
+
+    helm
   ];
 
   home.file = dotfiles // {
