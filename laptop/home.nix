@@ -21,6 +21,9 @@ in
     gh
     neofetch
 
+    dunst
+    rofi-wayland
+    
     firefox
     tidal-hifi
     spotify
