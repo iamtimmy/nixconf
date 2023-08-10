@@ -4,9 +4,9 @@ with pkgs;
 with apple-fonts;
 {
   fontDir.enable = true;
-  fonts = [
+  packages = [
     hack-font
-    sf-pro
+    # sf-pro
 
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
