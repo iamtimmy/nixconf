@@ -9,15 +9,17 @@ in
   shells = with pkgs; [ zsh bash nushell ];
 
   systemPackages = with pkgs; [
-    foot
-    alacritty
-    kitty
-
     zsh
     bash
     nushell
 
-    vim
+    foot
+    alacritty
+    kitty
+
     util-linux
+    busybox
+
+    vim
   ];
 }
