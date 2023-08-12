@@ -32,6 +32,7 @@ in
   ];
 
   home.file = dotfiles // {
+    ".config/hypr/hyprland.conf".source = ./dotfiles/hypr/hyprland.conf;
   };
 
   home.sessionVariables = {
