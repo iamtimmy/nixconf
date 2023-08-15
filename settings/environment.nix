@@ -14,7 +14,7 @@ in
     nushell
 
     foot
-    alacritty
+    walacritty
     kitty
 
     util-linux
