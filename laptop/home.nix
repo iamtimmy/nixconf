@@ -32,9 +32,11 @@ in
     helvum
     pavucontrol
     
-    firefox
     tidal-hifi
     spotify
+
+    firefox
+    brave
   ];
 
   home.file = dotfiles // {

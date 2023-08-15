@@ -23,10 +23,6 @@ in
 
     neofetch
 
-    firefox
-    tidal-hifi
-    spotify
-
     steam
 
     piper
@@ -34,6 +30,12 @@ in
     helvum
     qjackctl
     pavucontrol
+
+    tidal-hifi
+    spotify
+
+    firefox
+    brave
   ];
 
   home.file = dotfiles // {
