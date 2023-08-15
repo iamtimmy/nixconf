@@ -9,16 +9,18 @@ in
   home.stateVersion = "23.05";
   programs.home-manager.enable = true;
 
+  programs.kitty = {
+    enable = true;
+    font = {
+      size = 12;
+      name = "Hack";
+    };
+    theme = "Gruvbox Dark Hard";
+  };
+
   home.packages = with pkgs; [
-    helix
     starship
 
-    bat
-    ripgrep
-    
-    wget 
-    git
-    gh
     neofetch
 
     firefox
@@ -31,16 +33,7 @@ in
 
     helvum
     qjackctl
-    qpwgraph
     pavucontrol
-
-    reaper
-    zrythm
-    lmms
-    ardour
-    bitwig-studio
-
-    helm
   ];
 
   home.file = dotfiles // {
@@ -49,14 +42,6 @@ in
   home.sessionVariables = {
     EDITOR = "hx";
     BROWSER = "firefox";
-    TERMINAL = "foot";
+    TERMINAL = "kitty";
   };
-
-  
-  # xdg.desktopEntries = {
-  #   alacritty = {
-  #     name = "Alacritty";
-  #     exec = "alacritty";
-  #   };
-  # };
 }

@@ -9,16 +9,18 @@ in
   home.stateVersion = "23.05";
   programs.home-manager.enable = true;
 
+  programs.kitty = {
+    enable = true;
+    font = {
+      size = 12;
+      name = "Hack";
+    };
+    theme = "Gruvbox Dark Hard";
+  };
+
   home.packages = with pkgs; [
-    helix
     starship
 
-    bat
-    ripgrep
-    
-    wget 
-    git
-    gh
     neofetch
 
     eww-wayland
@@ -26,13 +28,13 @@ in
     libsForQt5.polkit-kde-agent
     dunst
     rofi-wayland
+
+    helvum
+    pavucontrol
     
     firefox
     tidal-hifi
     spotify
-
-    helvum
-    pavucontrol
   ];
 
   home.file = dotfiles // {
@@ -45,6 +47,6 @@ in
   home.sessionVariables = {
     EDITOR = "hx";
     BROWSER = "firefox";
-    TERMINAL = "alacritty";
+    TERMINAL = "kitty";
   };
 }

@@ -1,10 +1,5 @@
 { pkgs }:
 
-let
-  walacritty = pkgs.runCommand "alacritty" { buildInputs = [ pkgs.makeWrapper ]; } ''
-    makeWrapper ${pkgs.alacritty}/bin/alacritty $out/bin/alacritty --set WAYLAND_DISPLAY
-  '';
-in
 {
   shells = with pkgs; [ zsh bash nushell ];
 
@@ -13,13 +8,15 @@ in
     bash
     nushell
 
-    foot
-    walacritty
-    kitty
-
     util-linux
     busybox
+    bat
+    ripgrep
+    wget 
+    git
+    gh
 
     vim
+    helix
   ];
 }

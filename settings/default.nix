@@ -1,3 +1,5 @@
+{ pkgs }:
+
 {
   nixpkgs.config.allowUnfree = true;
 
@@ -13,6 +15,13 @@
     LC_PAPER = "en_US.UTF-8";
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
+  };
+
+  console = {
+    earlySetup = true;
+    font = "${pkgs.terminus_font}/share/consolefonts/ter-i22b.psf.gz";
+    packages = with pkgs; [ terminus_font ];
+    keyMap = "us";
   };
 
   time.timeZone = "Europe/Amsterdam";
