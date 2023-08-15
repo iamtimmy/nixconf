@@ -51,6 +51,7 @@
   };
 
   hardware.pulseaudio.enable = false;
+  hardware.bluetooth.enable = true;
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
