@@ -1,7 +1,6 @@
-{ pkgs, apple-fonts }:
+{ pkgs }:
 
 with pkgs;
-with apple-fonts;
 {
   fontDir.enable = true;
   packages = [

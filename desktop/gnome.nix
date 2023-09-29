@@ -18,9 +18,5 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.top-bar-organizer
     gnomeExtensions.appindicator
-
-    whitesur-gtk-theme
-    whitesur-icon-theme
-    apple-cursor
   ];
 }

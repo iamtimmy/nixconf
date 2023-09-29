@@ -13,14 +13,9 @@
       url = "github:nix-community/haumea/v0.2.2";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    apple-fonts-packages = {
-      url = "github:paranormal775566/apple-fonts.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = inputs@{ nixpkgs, haumea, home-manager, apple-fonts-packages, ... }:
+  outputs = inputs@{ nixpkgs, haumea, home-manager, ... }:
     let
       system = "x86_64-linux";
       inherit (nixpkgs.lib) genAttrs nixosSystem;
@@ -29,7 +24,6 @@
         src = ./settings;
         inputs = args // {
           inherit inputs;
-          apple-fonts = apple-fonts-packages.packages.${system};
         };
         transformer = haumea.lib.transformers.liftDefault;
       };
