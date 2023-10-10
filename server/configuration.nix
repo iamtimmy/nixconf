@@ -10,18 +10,16 @@
       ./hardware-configuration.nix
     ];
 
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/vda";
 
-  time.timeZone = "Europe/London";
   networking.hostName = "server";
+  time.timeZone = "Europe/London";
 
-  # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
-
   system.stateVersion = "23.05";
 }
 
