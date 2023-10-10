@@ -37,6 +37,9 @@
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
 
+  xdg.sounds.enable = true;
+  xdg.portal.enable = true;
+
   hardware.nvidia.modesetting.enable = true;
 
   hardware.opengl.enable = true;
