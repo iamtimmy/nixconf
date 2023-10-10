@@ -13,6 +13,8 @@ in
     starship
 
     neofetch
+
+    caddy
   ];
 
   home.file = dotfiles // {
