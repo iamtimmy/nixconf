@@ -30,6 +30,7 @@
   boot.initrd.luks.devices."luks-0f094e65-9e27-448f-82da-cfb754446f10".device = "/dev/disk/by-uuid/0f094e65-9e27-448f-82da-cfb754446f10";
   boot.initrd.luks.devices."luks-0f094e65-9e27-448f-82da-cfb754446f10".keyFile = "/crypto_keyfile.bin";
 
+  time.timeZone = "Europe/Amsterdam";
   networking.hostName = "desktop";
   networking.networkmanager.enable = true;
 

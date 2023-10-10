@@ -64,5 +64,19 @@
         ];
       };
 
+      nixosConfigurations.server = nixosSystem {
+        inherit system;
+        modules = [
+          settings
+          ./server/configuration.nix
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.admin = {
+              imports = [ ./server/home.nix ];
+            };
+          }
+        ];
+      };
     };
 }

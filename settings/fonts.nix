@@ -6,7 +6,6 @@ with apple-fonts;
   fontDir.enable = true;
   packages = [
     hack-font
-    # sf-pro
 
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];

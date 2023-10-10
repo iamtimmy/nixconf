@@ -58,10 +58,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  time.timeZone = "Europe/Amsterdam";
+
   networking.hostName = "laptop";
-  # networking.wireless.enable = true;
   networking.networkmanager.enable = true;
   
   system.stateVersion = "23.05";
-
 }

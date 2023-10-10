@@ -24,7 +24,5 @@
     keyMap = "us";
   };
 
-  time.timeZone = "Europe/Amsterdam";
-
   system.stateVersion = "23.05";
 }
