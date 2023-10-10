@@ -14,6 +14,7 @@ in
 
     neofetch
 
+    screen
     caddy
   ];
 
