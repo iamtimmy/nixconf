@@ -37,6 +37,8 @@ in
 
     firefox
     brave
+
+    ocaml
   ];
 
   home.file = dotfiles // {
