@@ -10,6 +10,9 @@
 
     util-linux
     busybox
+    libimobiledevice
+    ifuse
+
     bat
     ripgrep
     wget 

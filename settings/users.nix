@@ -11,6 +11,7 @@
       "audio"
       "realtime"
       "libvirtd"
+      "adbusers"
     ];
   };
 }

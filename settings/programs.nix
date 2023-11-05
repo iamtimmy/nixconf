@@ -10,4 +10,6 @@
       ];
     };
   };
+
+  adb.enable = true;
 }
