@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   xserver = {
     layout = "us";
