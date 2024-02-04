@@ -33,7 +33,6 @@ in
     pavucontrol
     
     tidal-hifi
-    spotify
 
     firefox
     brave

@@ -38,7 +38,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.admin = {
               imports = [ ./desktop/home.nix ];
-	    };
+	          };
           }
         ];
       };

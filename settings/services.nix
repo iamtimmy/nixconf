@@ -2,8 +2,8 @@
 
 {
   xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    xkb.variant = "";
   };
 
   fstrim.enable = true; # make better ssd support&lifetime

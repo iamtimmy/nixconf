@@ -8,34 +8,29 @@
 
   programs.hyprland = {
     enable = true;
-    xwayland = {
-      enable = true;
-    };
-
-    enableNvidiaPatches = true;
   };
 
   services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "nvidia" ];
+  # services.xserver.videoDrivers = [ "nvidia" ];
   
   xdg.sounds.enable = true;
   xdg.portal.enable = true;
 
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = true;
-    powerManagement.finegrained = true;
+  # hardware.nvidia = {
+  #   modesetting.enable = true;
+  #   powerManagement.enable = true;
+  #   powerManagement.finegrained = true;
 
-    prime = {
-      offload = {
-        enable = true;
-        enableOffloadCmd = true;
-      };
+  #   prime = {
+  #     offload = {
+  #       enable = true;
+  #       enableOffloadCmd = true;
+  #     };
 
-      intelBusId = "PCI:0:2:0";
-      nvidiaBusId = "PCI:1:0:0";
-    };
-  };
+  #     intelBusId = "PCI:0:2:0";
+  #     nvidiaBusId = "PCI:1:0:0";
+  #   };
+  # };
 
   hardware.opengl.enable = true;
   hardware.opengl.driSupport = true;
